@@ -1,3 +1,0 @@
-# Bienvenue !
-Ce site Web est actuellement en cours de préparation...
-

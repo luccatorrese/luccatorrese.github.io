@@ -14,7 +14,7 @@ body {
 
 /* en-tête */
 header {
-    background: #003366;
+    background: #1a1a1a;
     color: #fff;
     padding: 10px 20px;
     text-align: center;
@@ -22,7 +22,7 @@ header {
 
 /* pied de page */
 footer {
-    background: #003366;
+    background: #1a1a1a;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -247,6 +247,7 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+.liennav {
+    color: white;
+    text-decoration: none;
 }

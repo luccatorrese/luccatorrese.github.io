@@ -63,7 +63,7 @@ p {
     margin: 0 auto;
     padding: 20px;
     font-size: 1.1rem;
-    line-height: 1.8;
+    line-height: 1.5;
 }
 
 .portrait {
@@ -78,23 +78,6 @@ p {
 
 .bienvenue {
     margin: 1em;
-}
-
-/* 1242×2688 pixels at 458ppi */
-@media only screen and (width: 414px) and (height: 896px) and (-webkit-device-pixel-ratio: 3) {
-    .portrait {
-        display: none;
-    }
-
-    .welcome-textside {
-        color: black;
-        margin: auto;
-        text-align: justify;
-        width: 70%;
-    }
-}
-
-@media screen and (max-width: 600px) {
 }
 
 .contact {
@@ -127,13 +110,10 @@ p {
 
 /* animation pour le bouton Envoi */
 
-.b-envoi {
-    font-weight: bold;
-}
-
     .b-envoi:hover {
-        background-color: black;
+        background-color: red;
         color: white;
+        font-weight: bold;
     }
 
     .b-envoi:active {
@@ -143,7 +123,7 @@ p {
 
 @keyframes anim {
     100% {
-        transform: translateX(1200px);
+        transform: translateX(1400px);
         opacity: 0;
     }
 }
@@ -223,13 +203,16 @@ button {
 }
 
 .interests-textside {
-    width: 80%;
-    margin: auto;
+    max-width: 60vw;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 .skills {
     color: black;
-    margin: 2em;
+    margin: 1em;
 }
 
 li img {
@@ -238,8 +221,11 @@ li img {
 }
 
 .skills-textside {
-    width: 80%;
-    margin: auto;
+    max-width: 70vw;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.5;
     text-align: justify;
 }
 
@@ -250,4 +236,9 @@ html {
 .liennav {
     color: white;
     text-decoration: none;
+}
+
+.img-skills
+{
+    font-size: 1.3rem;
 }

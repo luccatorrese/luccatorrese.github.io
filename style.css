@@ -123,7 +123,7 @@ p {
 
 @keyframes anim {
     100% {
-        transform: translateX(1400px);
+        transform: translateX(1500px);
         opacity: 0;
     }
 }

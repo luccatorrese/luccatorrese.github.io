@@ -1,18 +1,22 @@
 <!doctype html>
 <html lang="fr">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="images/home.png">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="author" content="">
-        <meta name="keywords" content="">
-        <meta name="description" content="">
-        <title>Formulaire de contact</title>
-    </head>
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/home.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="lucca torrese">
+    <meta name="keywords" content="portfolio,travail,MMI,jeux,compétences">
+    <meta name="description" content="Portfolio MMI">
+    <title>Formulaire de contact</title>
+    <script src="main.js"></script>
+
+</head>
 
     <body>
 
@@ -63,7 +67,7 @@
                     <label for="message">* Message :</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
-                <button class="b-envoi" type="submit">Envoyer</button>
+                <button class="b-envoi" type="submit" onclick="send_message()">Envoyer</button>
             </form>
 
         </div>
@@ -76,6 +80,7 @@
             </ul>
         </nav>
     </footer>
+
     </body>
 
 </html>

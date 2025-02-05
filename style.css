@@ -51,6 +51,7 @@ h1 {
     font-size: 1.6rem;
     margin: 0;
     text-align: center;
+    padding: 5px;
 }
 
 p {
@@ -123,7 +124,7 @@ p {
 
 @keyframes anim {
     100% {
-        transform: translateX(1500px);
+        transform: translateX(1400px);
         opacity: 0;
     }
 }
@@ -241,4 +242,20 @@ html {
 .img-skills
 {
     font-size: 1.3rem;
+}
+
+.work {
+    max-width: 40vw;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.about-textside {
+    max-width: 40vw;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1.1rem;
+    line-height: 1.5;
 }

@@ -1,7 +1,6 @@
 ﻿// Récupération de l'élément qui va changer de couleur
 const overlay = document.getElementById("product-shape");
 
-overlay.style.fill = "#be3d2c"
 function changeColor(picker) {
     // Set the fill style
     overlay.style.fill = picker.toHEXString();
@@ -12,3 +11,30 @@ function changeColor(picker) {
     productsvg.style.fill = picker.toHEXString()
 
 }
+
+const animation = bodymovin.loadAnimation({
+    container: document.getElementById('lottie'),
+    path: 'Confetti_2.json',
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+})
+animation.play();
+
+const lottieContainer = document.getElementById('lottie');
+const animation = bodymovin.loadAnimation({
+    container: lottieContainer,
+    path: 'Confetti_2.json',
+    renderer: 'svg',
+    loop: true,
+    autoplay: false,
+})
+
+// Play the animation on hover
+lottieContainer.addEventListener('mouseover', () => {
+    animation.play();
+});
+// Stop the animation after playing once
+animation.addEventListener('loopComplete', function () {
+    animation.stop();
+});

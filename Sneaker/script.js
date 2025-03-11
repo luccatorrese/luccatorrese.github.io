@@ -13,7 +13,7 @@ function changeColor(picker) {
 }
 
 const animation = bodymovin.loadAnimation({
-    container: document.getElementById('lottie'),
+    container: document.getElementById('conteneur'),
     path: 'Confetti_2.json',
     renderer: 'svg',
     loop: true,
@@ -21,7 +21,7 @@ const animation = bodymovin.loadAnimation({
 })
 animation.play();
 
-const lottieContainer = document.getElementById('lottie');
+const lottieContainer = document.getElementById('conteneur');
 const animation = bodymovin.loadAnimation({
     container: lottieContainer,
     path: 'Confetti_2.json',

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"
+        integrity="sha512-fTTVSuY9tLP+l/6c6vWz7uAQqd1rq3Q/GyKBN2jOZvJSLC5RjggSdboIFL1ox09/Ezx/AKwcv/xnDeYN9+iDDA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <title>Cubes</title>
+</head>
+<body>
+    <div id="lottie"></div>
+
+    <script>
+        function updateSlider(value) {
+            animation.setSpeed(value / 100);
+        }
+    </script>
+
+    <label for="range_speed">Vitesse des cubes : </label>
+    <input
+        type="range"
+        name="speed"
+        class="slider"
+        min="0"
+        max="100"
+        value="10"
+        oninput="updateSlider(this.value)"
+    />
+    <span class="slider_label"></span>
+
+    <script>
+      
+        // Function to generate a random color in hexadecimal format
+        function getRandomColor() {
+          const letters = '0123456789ABCDEF';
+          let color = '#';
+          for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+          }
+          return color;
+        }
+      
+        const animationContainer = document.getElementById('lottie');
+        const animation = bodymovin.loadAnimation({
+            container: document.getElementById("lottie"),
+            path: "https://assets1.lottiefiles.com/packages/lf20_lS88YC8r3Y.json",
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            pathColors: {
+                "main": "#000000", // Replace with the actual path to the element in your animation
+                "Shape Layer 5": "#000000"  // Replace with the actual path to another element in your animation
+            }
+        });
+        animation.play();
+      
+       animation.addEventListener('DOMLoaded', () => {
+         // Generate a random color
+          
+          const shapes = document.querySelectorAll('path');
+          for (const shape of shapes) {
+            let randomColor = getRandomColor();
+            shape.style.fill = randomColor;
+          }
+        });
+    </script>
+  
+</body>
+</html>

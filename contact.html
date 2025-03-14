@@ -37,21 +37,34 @@
                 <p>
                     Pour me contacter, tu peux me joindre via ma boîte mail personnelle :
                     <b>lucca2b@hotmail.com</b>. <br><br>C'est ici que les mails
-                    les plus importants atterrissent. Mon temps de réponse
-                    est généralement rapide : cela dépend de l'heure, du jour, et des mails que je reçois.
+                    les plus importants atterrissent. Mon temps de réponse dépend de l'heure, du jour d'envoi
+                    et du type de mails que je reçois.
                 </p>
                 <p>
                     Sur le lien suivant, tu trouveras mon
-                    <a href="https://www.linkedin.com/in/lucca-anghjulu-torrese-3a73892a2/">
-                    profil LinkedIn</a>. Il contient l'historique de mes formations et de
+                    <a href="https://www.linkedin.com/in/lucca-anghjulu-torrese-3a73892a2/" onclick="openConfirm(event)">profil LinkedIn.</a>
+                    <!-- Boîte de confirmation personnalisée -->
+                    <div id="custom-confirm">
+                        <div class="confirm-box">
+                            <img src="images/Caution.png" style="max-width:5vw; max-height:5vh; display:flex;">
+                            <h2 style="display:flex;">Avertissement</h2>
+                            <p>Es-tu sûr de vouloir quitter cette page ?</p>
+                            <div class="confirm-buttons">
+                                <button class="confirm-yes" onclick="confirmExit()">Oui</button>
+                                <button class="confirm-no" onclick="closeConfirm()">Non</button>
+                            </div>
+                        </div>
+                    </div>
+                    Il contient l'historique de mes formations et de
                     certaines compétences que j'ai acquises pendant ma scolarité.
                     <b>Attention : une authentification à LinkedIn peut être requise pour continuer. </b>
                 </p>
             </div>
+
             <form name="Formulaire de contact" action="contact.html" method="post">
                 <i><b>Remarque : </b>les champs contenant un astérisque (*) sont obligatoires.<br></i>
                 <div class="input-group">
-                    <label for="nom">* Nom :</label>
+                    <label for="nom">* Prénom :</label>
                     <input type="text" id="nom" name="nom" required>
                 </div>
         

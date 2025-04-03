@@ -1,0 +1,187 @@
+body {
+    display: flex;
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: start; /* Alignez les éléments au début de la page */
+    min-height: 100vh; /* Hauteur minimale de 100% du viewport */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box; /* S'assure que le padding ne dépasse pas la largeur et hauteur spécifiées */
+}
+
+*,
+*:before,
+*:after {
+box-sizing: border-box;
+}
+
+
+.product-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #FFF;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+    border-radius:25px;
+}
+
+.image-gallery {
+    flex: 1;
+    padding: 20px;
+}
+
+.main-image img {
+    width: 100%;
+    margin-top: 250px;
+    
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.product-details {
+    width: 40%;
+    border-left: 2px solid #000; /* Ajoute une bordure noire solide de 2px */
+    padding-left: 20px; /* Assurez-vous d'ajuster le padding pour éviter que le texte ne touche la bordure */
+}
+
+
+
+.product-details h1, .product-details p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.size-selector, .color-selector {
+    margin: 20px 0;
+}
+
+ /* Styles CSS existants */
+
+        /* Ajouter animations CSS */
+        .add-to-cart-btn {
+            background-color: #000; /* Noir */
+            color: white;
+            padding: 10px 20px;
+            width: 50% ; /* Définit une largeur spécifique pour le bouton */
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            border-radius: 20px;
+            display: block; /* Rend le bouton en bloc pour permettre la largeur spécifique */
+            margin: 0 auto; /* Centre le bouton si nécessaire */
+        }
+        
+
+        .add-to-cart-btn:hover {
+            background-color: #800000; /* Rouge vif */
+            transform: scale(1.05);
+        }
+
+/* Animation au survol des boutons de couleurs */
+        .color-selector input[type="color"] {
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .color-selector input[type="color"]:hover {
+            transform: scale(1.1);
+            border-color: #ff0000; /* Rouge vif */
+        }
+
+ .product-container {
+            position: relative; /* Assure que le bouton de retour est positionné relativement à ce conteneur */
+            /* Ajoutez d'autres styles ici au besoin */
+        }
+        .back-button {
+            position: absolute;
+            top:43px; /* Ajustez en fonction des besoins pour positionner le bouton plus précisément */
+            right: 10px; /* Ajustez en fonction des besoins */
+            padding: 5px 10px;
+            background-color: #f0f0f0; /* Couleur de fond du bouton */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white; 
+            background-color:#000; 
+          
+        }
+
+.back-button:hover {
+            background-color: #800000; /* Rouge vif */
+            transform: scale(1.05);
+        }
+
+.jscolor{
+
+  bottom: 4em !important;
+  right: 4em !important;
+  z-index: 3 !important;
+  padding: 1em !important;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5) !important;
+  border: 0 !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  margin: 20px;
+  }
+
+/* container SVG*/
+
+#container {
+    position: relative;
+    width: 60%;
+    margin-top: 250px; /* Ajustez cette valeur selon l'espace que vous souhaitez créer */
+}
+
+
+    #background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+        margin:0;
+    }
+
+    #product-svg, #product-svg2, #product-svg3, #product-svg4, #product-svg5, #product-svg6, #product-svg7, #product-svg8 {
+        position: absolute;
+        left: 0;
+        top:-4px;
+        z-index: 1;
+    width: 100%;
+        margin:0;
+    }
+
+    /* image supp*/
+
+    .switch-image {
+        width: 100px; /* Ajustez la largeur selon vos besoins */
+        height: auto; /* Garde le ratio aspect des images intact */
+        cursor: pointer;
+        transition: transform 0.2s;
+        border: 2px solid #000;
+        border-radius: 5px; /* Bords arrondis pour un look plus doux */
+        margin: 5px; /* Ajoutez ou ajustez la marge pour espacer les images */
+    }
+    
+  .image-switch-container {
+    display: flex;
+    top: -225px;
+    justify-content: center;
+    gap: 10px; /* Espace entre les images */
+    margin: 0 auto 20px; /* Centre le conteneur et ajoute un espace au-dessous */
+    padding: 10px;
+    border: 2px solid #000; /* Contours optionnels autour du conteneur */
+    border-radius: 10px;
+    position: relative; /* Position relative pour un positionnement précis */
+    z-index: 2; /* Assure que le conteneur est au-dessus du container de la chaussure */
+    width: fit-content; /* Ajuste la largeur du conteneur à son contenu */
+}
+    
+    
+    .switch-image:hover {
+        transform: scale(1.1);
+    }
+    
+    
